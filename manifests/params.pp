@@ -22,14 +22,14 @@ class influxdb::params {
   }
 
   $meta_config = {
-    'dir'                  => '/var/lib/influxdb/meta',
+    'dir'                  => '/influxdb/meta',
     'retention-autocreate' => true,
     'logging-enabled'      => true,
   }
 
   $data_config = {
-    'dir'                                => '/var/lib/influxdb/data',
-    'wal-dir'                            => '/var/lib/influxdb/wal',
+    'dir'                                => '/influxdb/data',
+    'wal-dir'                            => '/influxdb/wal',
     'trace-logging-enabled'              => false,
     'query-log-enabled'                  => true,
     'cache-max-memory-size'              => 1048576000,
